@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+
+#  db:
+#    image: mysql:5.7
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_DATABASE: szalek
+#      MYSQL_USER: szalek
+#      MYSQL_PASSWORD: szalek
+
+  drupal_723:
+#    depends_on:
+#      - db
+    image: drupal:7.23
+    build: ./
+    ports:
+      - 85:80
